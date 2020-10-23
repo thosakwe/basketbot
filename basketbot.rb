@@ -8,11 +8,11 @@ bot = Discordrb::Commands::CommandBot.new(
 )
 
 bot.command :scores do |event|
-    event.respond 'TODO: Show scores for current game'
+  event.respond "TODO: Show scores for current game"
 end
 
 bot.command :games do |event|
-    event.respond 'TODO: Show tonight\'s games'
+  event.respond "TODO: Show tonight's games"
 end
 
 bot.run
