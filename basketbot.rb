@@ -7,11 +7,11 @@ bot = Discordrb::Commands::CommandBot.new(
   prefix:     ENV['$']
 )
 
-bot.message(content: 'scores') do |event|
+bot.command :scores do |event|
     event.respond 'TODO: Show scores for current game'
 end
 
-bot.message(content: 'games') do |event|
+bot.command :games do |event|
     event.respond 'TODO: Show tonight\'s games'
 end
 
