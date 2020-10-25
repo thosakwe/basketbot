@@ -4,7 +4,7 @@ require 'discordrb'
 bot = Discordrb::Commands::CommandBot.new(
   token:      ENV['discord_bot_token'],
   client_id:  ENV['discord_bot_id'],
-  prefix:     ENV['$']
+  prefix:     '$'
 )
 
 bot.command :scores do |event|
