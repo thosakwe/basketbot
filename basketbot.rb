@@ -15,4 +15,15 @@ bot.command :games do |event|
   event.respond "TODO: Show tonight's games"
 end
 
+bot.command :help do |event|
+  response = "Here's what I do:"
+  commands = {
+    scores: "Show scores for current game",
+    games:  "Show tonight's games"
+  }.each do |key, value|
+    str << "\n#{bot.prefix}#{key}\t#{value}"
+  end
+  event.respond response
+end
+
 bot.run
