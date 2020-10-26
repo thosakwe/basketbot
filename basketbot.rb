@@ -21,7 +21,7 @@ bot.command :help do |event|
     scores: "Show scores for current game",
     games:  "Show tonight's games"
   }.each do |key, value|
-    str << "\n#{bot.prefix}#{key}\t#{value}"
+    response << "\n#{bot.prefix}#{key}\t#{value}"
   end
   event.respond response
 end
